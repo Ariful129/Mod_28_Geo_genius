@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="container mx-auto mb-8">
+         <div class="bg-blue-200 flex justify-between p-3 rounded-xl">
+             <div>
+                  <h2 class="text-4xl">Interactive</h2>
+                  <h4>Geometry Genius</h4>
+             </div>
+             <div>
+               <button class="border-2 p-1 text-xl px-3 rounded-xl bg-green-400 ">Blog</button>
+             </div>
+         </div>
+    </nav>
+    <main class="container mx-auto">
+         <div class="flex flex-col-reverse flex-col lg:flex-row gap-8">
+
+             <div class="flex-1 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mr-10">
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                          <div class="text-center ">
+                            <h2 class="text-2xl font-semibold">Triangle</h2>
+                            <p class="text-xl">Area(A)=0.5*b*h</p>
+                             <div class="flex gap-2 justify-center mb-4 mt-2">
+                                <input id="triin1" class="border-2 w-5/12" type="number" placeholder="base.."><span>cm</span>
+                                <input id="triin2" class="border-2 w-5/12" type="number" placeholder="height.."><span>cm</span><br>
+                             </div>
+                            <button id="tri-btn" class="btn btn-primary">Calculate</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <div class="text-center ">
+                            <h2 class="text-2xl font-semibold">Rectangle</h2>
+                            <p class="text-xl">Area(A)=b*h</p>
+                             <div class="flex gap-2 justify-center mb-4 mt-2">
+                                <input id="recin1" class="border-2 w-5/12" type="number" placeholder="base.."><span>cm</span>
+                                <input id="recin2" class="border-2 w-5/12" type="number" placeholder="height.."><span>cm</span><br>
+                             </div>
+                            <button id="rec-btn" class="btn btn-primary">Calculate</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <div class="text-center ">
+                            <h2 class="text-2xl font-semibold">Parallelogram</h2>
+                            <p class="text-xl">Area(A)=b*h</p>
+                             <div class="flex gap-2 justify-center mb-4 mt-2">
+                                <input id="parain1" class="border-2 w-5/12" type="number" placeholder="base.."><span>cm</span>
+                                <input id="parain2" class="border-2 w-5/12" type="number" placeholder="height.."><span>cm</span><br>
+                             </div>
+                            <button id="para-btn" class="btn btn-primary">Calculate</button>
+                          </div>
+                    </div>
+                </div>
+             </div>
+             
+             <!-- <div class="w-[350px] border-4 h-[300px]">
+                <h2 class="  text-4xl text-center font-bold  underline underline-offset-8">Area Calculation: </h2>
+                <p class="text-3xl  font-semibold text-center mt-14 "><span id="Area-box">00</span></p>
+                
+                <buttonc class=" border-2 p-2 px-4 text-xl font-bold bg-red-400 rounded-xl" >Reset</buttonc>
+             </div> -->
+
+             <div class="w-[350px] border-4 h-[300px] flex flex-col justify-between">
+                <h2 class="text-4xl text-center font-bold underline underline-offset-8">Area Calculation:</h2>
+                <p class="text-4xl font-semibold text-center mt-14"><span id="Area-box">00</span></p>
+                <button id="resetButton" class="border-2 p-2 px-4 text-xl font-bold bg-red-400 rounded-xl self-center">Reset</button>
+            </div>
+
+         </div>
+
+ <!-- New -->
+ 
+ <div class="flex flex-col lg:flex-row gap-8 mt-10 mb-10 mr-10">
+
+    <div class="flex-1 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+       <div class="card bg-base-100 shadow-xl">
+           <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+           <div class="card-body ">
+                 <div class="text-center ">
+                   <h2 class="text-2xl font-semibold">Rhombus</h2>
+                   <p class="text-xl">Area(A)=0.5 x b x h</p>
+                    <div class="flex gap-2 justify-center mb-4 mt-2">
+                       <input id="ramin1" class="border-2 w-5/12" type="number" placeholder="diagona1.."><span>cm</span>
+                       <input id="ramin2" class="border-2 w-5/12" type="number" placeholder="diagona2.."><span>cm</span><br>
+                    </div>
+                   <button id="ram-btn" class="btn btn-primary">Calculate</button>
+                 </div>
+           </div>
+       </div>
+       <div class="card  bg-base-100 shadow-xl">
+           <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+           <div class="card-body">
+               <div class="text-center ">
+                   <h2 class="text-2xl font-semibold">Pentagon</h2>
+                   <p class="text-xl">Area(A)=p*b</p>
+                    <div class="flex gap-2 justify-center mb-4 mt-2">
+                       <input id="penin1" class="border-2 w-5/12" type="number" placeholder="p.."><span>cm</span>
+                       <input id="penin2" class="border-2 w-5/12" type="number" placeholder="b.."><span>cm</span><br>
+                    </div>
+                   <button id="pen-btn" class="btn btn-primary">Calculate</button>
+                 </div>
+           </div>
+       </div>
+       <div class="card  bg-base-100 shadow-xl">
+           <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+           <div class="card-body">
+               <div class="text-center ">
+                   <h2 class="text-2xl font-semibold">Parallelogram</h2>
+                   <p class="text-xl">Area(A)=pi*a*b</p>
+                    <div class="flex gap-2 justify-center mb-4 mt-2">
+                       <input id="piin1" class="border-2 w-5/12" type="number" placeholder="a.."><span>cm</span>
+                       <input id="piin2" class="border-2 w-5/12" type="number" placeholder="b.."><span>cm</span><br>
+                    </div>
+                   <button id="pi-btn" class="btn btn-primary">Calculate</button>
+                 </div>
+           </div>
+       </div>
+    </div>
+    
+    <div class="w-[350px] ">
+       <!-- <h2 class="border-2 h-[250px] text-4xl text-center font-bold">Area Calculation:</h2> -->
+    </div>
+</div>
+        
+    </main>
+
+
+    <script src="js/common.js"></script>
+    <script src="js/tria.js"></script>
+    <script src="js/rec.js"></script>
+    <script src="js/para.js"></script>
+    <script src="js/ram.js"></script>
+    <script src="js/pen.js"></script>
+    <script src="js/parall.js"></script>
+    
+</body>
+</html>
